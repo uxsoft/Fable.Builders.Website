@@ -1,0 +1,7 @@
+﻿.idea/
+.vscode/
+dist/
+bin/
+obj/
+node_modules/
+fable/

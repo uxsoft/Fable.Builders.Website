@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.Website", "Fable.Builders.Website\Fable.Builders.Website.fsproj", "{9E3477C9-7953-49DF-AEEE-04F4C406F22D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.DnDKit", "Fable.Builders.DnDKit\Fable.Builders.DnDKit.fsproj", "{8ECCCC90-1424-483B-9190-F27443D08ACA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E3477C9-7953-49DF-AEEE-04F4C406F22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3477C9-7953-49DF-AEEE-04F4C406F22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3477C9-7953-49DF-AEEE-04F4C406F22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3477C9-7953-49DF-AEEE-04F4C406F22D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ECCCC90-1424-483B-9190-F27443D08ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECCCC90-1424-483B-9190-F27443D08ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECCCC90-1424-483B-9190-F27443D08ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECCCC90-1424-483B-9190-F27443D08ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

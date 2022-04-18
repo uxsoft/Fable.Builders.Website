@@ -1,0 +1,3 @@
+[submodule "Fable.Builders.DnDKit"]
+	path = Fable.Builders.DnDKit
+	url = https://github.com/uxsoft/Fable.Builders.DnDKit
