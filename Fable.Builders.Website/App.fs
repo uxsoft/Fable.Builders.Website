@@ -34,6 +34,7 @@ let view (model: Model) dispatch =
             style [
                 style.height 66
                 style.backgroundColor color.white
+                style.zIndex 1
                 style.boxShadow(0, 1, 4, "rgba(0, 21, 41, 0.08)") ]
                 
             Space {
@@ -44,9 +45,28 @@ let view (model: Model) dispatch =
                         style.height 40 ]
                     src "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
                 }
-                    
-                str "Welcome to Fable.AntDesign, Ant Design bindings for Fable"
-            } 
+                Title {
+                    level 4
+                    style [ style.paddingTop 20 ]
+                    str "Fable.Builders.*"
+                }
+            }
+             
+            Menu {
+                style [ style.float'.right ]
+                mode MenuMode.Horizontal
+                
+                MenuItem {
+                    onClick (fun _ -> Browser.Dom.window.location.assign "https://github.com/uxsoft/Fable.Builders.Website" )
+                    style [ style.textAlign.center ]
+                    BasicIcon Icons.GithubFilled {
+                        style
+                            [ style.fontSize 32
+                              style.marginRight 0 ]
+                    }
+                }
+            }
+            
         }
         Layout {
             Sider {
@@ -111,9 +131,7 @@ let view (model: Model) dispatch =
                 } 
             }
             Content {
-                style [
-                    style.backgroundColor color.white
-                    style.padding(8) ]
+                style [ style.padding(8) ]
                 match model.Page with
                 | Page.SyntaxPage -> SyntaxPage.view model
                 | Page.ButtonPage -> ButtonPage.view model
