@@ -25,7 +25,7 @@ let notFound =
 let PageMenuItem (page: Page) (name: string) =
     MenuItem {
         key (string page)
-        str name
+        label (str name)
     }
 
 
@@ -58,7 +58,7 @@ let view (model: Model) dispatch =
                 mode MenuMode.Horizontal
                 
                 MenuItem {
-                    onClick (fun _ -> Browser.Dom.window.location.assign "https://github.com/uxsoft/Fable.Builders.Website" )
+//                    onClick (fun _ -> Browser.Dom.window.location.assign "https://github.com/uxsoft/Fable.Builders.Website" )
                     style [ style.textAlign.center ]
                     BasicIcon Icons.GithubFilled {
                         style
@@ -78,7 +78,7 @@ let view (model: Model) dispatch =
                     selectedKeys [| string model.Page |]
                     onClick (onPageSelected dispatch)
                     MenuItemGroup {
-                        title (Html.text "General")
+                        label (str "General")
                         
                         PageMenuItem Page.SyntaxPage "Syntax"
                         PageMenuItem Page.ButtonPage "Button"
@@ -86,25 +86,26 @@ let view (model: Model) dispatch =
                         PageMenuItem Page.TypographyPage "Typography"
                     }
                     MenuItemGroup {
-                        title (str "Layout")
+                        label (str "Layout")
                         
                         PageMenuItem Page.DividerPage "Divider"
                         PageMenuItem Page.GridPage  "Grid"
                         PageMenuItem Page.LayoutPage "Layout"
                     }
                     MenuItemGroup {
-                        title (str "Navigation")
+                        label (str "Navigation")
                         
+                        PageMenuItem Page.MenuPage "Menu"
                         PageMenuItem Page.StepsPage "Steps"
                     }
                     MenuItemGroup {
-                        title (str "Data Entry")
+                        label (str "Data Entry")
                         
                         PageMenuItem Page.FormPage "Form"
                         PageMenuItem Page.SelectPage "Select"
                     }
                     MenuItemGroup {
-                        title (str "Data Display")
+                        label (str "Data Display")
                         
                         PageMenuItem Page.ListPage "List"
                         PageMenuItem Page.CollapsePage "Collapse"
@@ -114,18 +115,18 @@ let view (model: Model) dispatch =
                     }
                     
                     MenuItemGroup {
-                        title (str "Feedback")
+                        label (str "Feedback")
                         PageMenuItem Page.NotificationPage "Notification"
                         PageMenuItem Page.ProgressPage "Progress"
                     }
                     
                     MenuItemGroup {
-                        title (str "Charts")
+                        label (str "Charts")
                     
                         PageMenuItem Page.ChartsPage "Charts"
                     }
                     MenuItemGroup {
-                        title (str "Drag & Drop")
+                        label (str "Drag & Drop")
                     
                         PageMenuItem Page.DnDKitPage "dnd-kit"
                         PageMenuItem Page.ReactBeautifulDnDPage "react-beautiful-dnd"
@@ -140,6 +141,7 @@ let view (model: Model) dispatch =
                 | Page.IconPage -> IconPage.view model
                 | Page.TypographyPage -> TypographyPage.view model
                 | Page.DividerPage -> DividerPage.view model
+                | Page.MenuPage -> MenuPage.view model
                 | Page.GridPage -> GridPage.view model
                 | Page.LayoutPage -> LayoutPage.view model
                 | Page.StepsPage -> StepsPage.view model

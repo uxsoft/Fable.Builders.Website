@@ -14,7 +14,7 @@ let subLines (text: string) (startIndex: int) (endIndex: int) =
         
 let fullExampleUrl (url: string) =
     if url.StartsWith("https://") then url
-    else $"https://raw.githubusercontent.com/uxsoft/Fable.AntDesign/master/src/Fable.AntDesign.Examples/{url}"
+    else $"https://raw.githubusercontent.com/uxsoft/Fable.Builders.Website/main/Fable.Builders.Website/{url}"
 
 let private imageButtonStyle =
     [ style.height 16

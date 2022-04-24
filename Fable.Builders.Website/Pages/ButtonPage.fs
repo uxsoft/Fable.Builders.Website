@@ -7,7 +7,7 @@ let view model =
     Example {
         name "Button Types"
         sourceUrl "Pages/ButtonPage.fs"
-        sourceRange (13, 21)
+        sourceRange (12, 19)
         
         Space {
             Button {

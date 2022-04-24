@@ -21,7 +21,7 @@ let view model =
                     defaultSelectedKeys [| "2" |]
                     
                     for index in 1..15 do
-                        MenuItem { key $"{index}"; str $"nav {index}" }
+                        MenuItem { key $"{index}"; label (str $"nav {index}") }
                 }
             }
             Content {

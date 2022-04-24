@@ -8,6 +8,7 @@ type Page =
     | DividerPage = 3
     | GridPage = 4
     | LayoutPage = 5
+    | MenuPage = 10
     | StepsPage = 14
     | FormPage = 19
     | SelectPage = 25

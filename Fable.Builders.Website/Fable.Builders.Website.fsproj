@@ -12,8 +12,9 @@
         <Compile Include="Pages\IconPage.fs" />
         <Compile Include="Pages\TypographyPage.fs" />
         <Compile Include="Pages\DividerPage.fs" />
-        <Compile Include="Pages\ListPage.fs" />
+        <Compile Include="Pages\MenuPage.fs" />
         <Compile Include="Pages\StepsPage.fs" />
+        <Compile Include="Pages\ListPage.fs" />
         <Compile Include="Pages\NotificationPage.fs" />
         <Compile Include="Pages\FormPage.fs" />
         <Compile Include="Pages\SyntaxPage.fs" />
