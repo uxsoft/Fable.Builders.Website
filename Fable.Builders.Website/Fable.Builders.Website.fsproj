@@ -38,9 +38,9 @@
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="../Fable.Builders.DnDKit/Fable.Builders.DnDKit.fsproj" />
+        <ProjectReference Include="..\Fable.Builders.AntDesignCharts\Fable.Builders.AntDesignCharts.fsproj" />
+        <ProjectReference Include="..\Fable.Builders.AntDesign\Fable.Builders.AntDesign.fsproj" />
         <PackageReference Include="Fable.Builders.ReactBeautifulDnd" Version="1.2.0" />
-        <PackageReference Include="Fable.Builders.AntDesignCharts" Version="3.158.0" />
-        <PackageReference Include="Fable.Builders.AntDesign" Version="3.158.0" />
         <PackageReference Include="Fable.Builders.React" Version="4.7.0" />
     </ItemGroup>
 </Project>

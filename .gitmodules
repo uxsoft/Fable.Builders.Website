@@ -1,3 +1,9 @@
 [submodule "Fable.Builders.DnDKit"]
 	path = Fable.Builders.DnDKit
 	url = https://github.com/uxsoft/Fable.Builders.DnDKit
+[submodule "Fable.Builders.AntDesign"]
+	path = Fable.Builders.AntDesign
+	url = https://github.com/uxsoft/Fable.Builders.AntDesign
+[submodule "Fable.Builders.AntDesignCharts"]
+	path = Fable.Builders.AntDesignCharts
+	url = https://github.com/uxsoft/Fable.Builders.AntDesignCharts

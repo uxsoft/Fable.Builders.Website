@@ -4,6 +4,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.Website", "F
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.DnDKit", "Fable.Builders.DnDKit\Fable.Builders.DnDKit.fsproj", "{8ECCCC90-1424-483B-9190-F27443D08ACA}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.AntDesignCharts", "Fable.Builders.AntDesignCharts\Fable.Builders.AntDesignCharts.fsproj", "{ECDA8E6C-5774-4146-B78C-4C99FB23F0B9}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.AntDesign", "Fable.Builders.AntDesign\Fable.Builders.AntDesign.fsproj", "{0EF7A57F-167D-4646-9843-9042A25C3961}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{8ECCCC90-1424-483B-9190-F27443D08ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ECCCC90-1424-483B-9190-F27443D08ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ECCCC90-1424-483B-9190-F27443D08ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDA8E6C-5774-4146-B78C-4C99FB23F0B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDA8E6C-5774-4146-B78C-4C99FB23F0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDA8E6C-5774-4146-B78C-4C99FB23F0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDA8E6C-5774-4146-B78C-4C99FB23F0B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF7A57F-167D-4646-9843-9042A25C3961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF7A57F-167D-4646-9843-9042A25C3961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF7A57F-167D-4646-9843-9042A25C3961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF7A57F-167D-4646-9843-9042A25C3961}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
