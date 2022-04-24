@@ -13,13 +13,14 @@ type Page =
     | SelectPage = 25
     | ListPage = 42
     | CollapsePage = 37
-    | TablePage = 45
-    | TimelinePage = 47
+    | SegmentedPage = 44
+    | TablePage = 46
+    | TimelinePage = 49
     | NotificationPage = 55
     | ProgressPage = 57
-    | ChartsPage = 10000
-    | DnDKitPage = 20000
-    | ReactBeautifulDnDPage = 20001
+    | ChartsPage = 1000
+    | DnDKitPage = 2000
+    | ReactBeautifulDnDPage = 2001
 
 type Model =
     { Page: Page

@@ -5,6 +5,7 @@ open Fable.AntDesign.Examples.Pages
 open Fable.AntDesign.Examples.Model
 open Fable.Builders.AntDesign
 open Fable.Builders.React
+open Fable.Builders.Website.Pages
 open Feliz
 open Elmish
 open Elmish.React
@@ -107,6 +108,7 @@ let view (model: Model) dispatch =
                         
                         PageMenuItem Page.ListPage "List"
                         PageMenuItem Page.CollapsePage "Collapse"
+                        PageMenuItem Page.SegmentedPage "Segmented"
                         PageMenuItem Page.TablePage "Table"
                         PageMenuItem Page.TimelinePage "Timeline"
                     }
@@ -145,6 +147,7 @@ let view (model: Model) dispatch =
                 | Page.SelectPage -> SelectPage.view model
                 | Page.ListPage -> ListPage.view model
                 | Page.CollapsePage -> CollapsePage.view model
+                | Page.SegmentedPage -> SegmentedPage.view model
                 | Page.TablePage -> TablePage.view model
                 | Page.TimelinePage -> TimelinePage.view model
                 | Page.NotificationPage -> NotificationPage.view model
