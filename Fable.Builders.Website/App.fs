@@ -130,6 +130,7 @@ let view (model: Model) dispatch =
                     
                         PageMenuItem Page.DnDKitPage "dnd-kit"
                         PageMenuItem Page.ReactBeautifulDnDPage "react-beautiful-dnd"
+                        PageMenuItem Page.FelaPage "fela"
                     }
                 } 
             }
@@ -157,6 +158,7 @@ let view (model: Model) dispatch =
                 | Page.ChartsPage -> ChartsPage.view model
                 | Page.DnDKitPage -> DnDKitPage.view model
                 | Page.ReactBeautifulDnDPage -> ReactBeautifulDnDPage.View ()
+                | Page.FelaPage -> FelaPage.view model
                 | _ -> notFound
             }
         }

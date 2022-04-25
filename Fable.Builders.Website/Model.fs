@@ -22,6 +22,7 @@ type Page =
     | ChartsPage = 1000
     | DnDKitPage = 2000
     | ReactBeautifulDnDPage = 2001
+    | FelaPage = 3000
 
 type Model =
     { Page: Page

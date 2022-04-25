@@ -8,6 +8,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.AntDesignCha
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.AntDesign", "Fable.Builders.AntDesign\Fable.Builders.AntDesign.fsproj", "{0EF7A57F-167D-4646-9843-9042A25C3961}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.Fela", "Fable.Builders.Fela\Fable.Builders.Fela.fsproj", "{B479884F-14A5-42C1-B8DF-D904E86DA718}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{0EF7A57F-167D-4646-9843-9042A25C3961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EF7A57F-167D-4646-9843-9042A25C3961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EF7A57F-167D-4646-9843-9042A25C3961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B479884F-14A5-42C1-B8DF-D904E86DA718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B479884F-14A5-42C1-B8DF-D904E86DA718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B479884F-14A5-42C1-B8DF-D904E86DA718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B479884F-14A5-42C1-B8DF-D904E86DA718}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

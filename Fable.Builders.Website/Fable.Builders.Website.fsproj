@@ -28,6 +28,7 @@
         <Compile Include="Pages\SelectPage.fs" />
         <Compile Include="Pages\DnDKitPage.fs" />
         <Compile Include="Pages\ReactBeautifulDnDPage.fs" />
+        <Compile Include="Pages\FelaPage.fs" />
         <Compile Include="App.fs" />
         <None Include="icon.png" />
         <Content Include="index.html" />
@@ -44,5 +45,6 @@
         <ProjectReference Include="..\Fable.Builders.AntDesign\Fable.Builders.AntDesign.fsproj" />
         <PackageReference Include="Fable.Builders.ReactBeautifulDnd" Version="1.2.0" />
         <PackageReference Include="Fable.Builders.React" Version="4.7.0" />
+        <ProjectReference Include="..\Fable.Builders.Fela\Fable.Builders.Fela.fsproj" />
     </ItemGroup>
 </Project>
