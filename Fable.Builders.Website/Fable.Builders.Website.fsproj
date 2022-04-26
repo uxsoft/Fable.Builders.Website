@@ -45,6 +45,7 @@
         <ProjectReference Include="..\Fable.Builders.AntDesign\Fable.Builders.AntDesign.fsproj" />
         <PackageReference Include="Fable.Builders.ReactBeautifulDnd" Version="1.2.0" />
         <PackageReference Include="Fable.Builders.React" Version="4.7.0" />
+        <ProjectReference Include="..\Fable.Builders.Emotion\Fable.Builders.Emotion.fsproj" />
         <ProjectReference Include="..\Fable.Builders.Fela\Fable.Builders.Fela.fsproj" />
     </ItemGroup>
 </Project>

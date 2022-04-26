@@ -7,3 +7,9 @@
 [submodule "Fable.Builders.AntDesignCharts"]
 	path = Fable.Builders.AntDesignCharts
 	url = https://github.com/uxsoft/Fable.Builders.AntDesignCharts
+[submodule "Fable.Builders.Fela"]
+	path = Fable.Builders.Fela
+	url = https://github.com/uxsoft/Fable.Builders.Fela
+[submodule "Fable.Builders.Emotion"]
+	path = Fable.Builders.Emotion
+	url = https://github.com/uxsoft/Fable.Builders.Emotion
