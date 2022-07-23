@@ -13,3 +13,6 @@
 [submodule "Fable.Builders.Emotion"]
 	path = Fable.Builders.Emotion
 	url = https://github.com/uxsoft/Fable.Builders.Emotion
+[submodule "Fable.Builders.React"]
+	path = Fable.Builders.React
+	url = https://github.com/uxsoft/Fable.Builders.React

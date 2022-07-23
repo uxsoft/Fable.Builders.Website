@@ -1,29 +1,32 @@
 module Fable.AntDesign.Examples.Model
 
-type Page =
-    | SyntaxPage = -1
-    | ButtonPage = 0
-    | IconPage = 1
-    | TypographyPage = 2
-    | DividerPage = 3
-    | GridPage = 4
-    | LayoutPage = 5
-    | MenuPage = 10
-    | StepsPage = 14
-    | FormPage = 19
-    | SelectPage = 25
-    | ListPage = 42
-    | CollapsePage = 37
-    | SegmentedPage = 44
-    | TablePage = 46
-    | TimelinePage = 49
-    | NotificationPage = 55
-    | ProgressPage = 57
-    | ChartsPage = 1000
-    | DnDKitPage = 2000
-    | ReactBeautifulDnDPage = 2001
-    | FelaPage = 3000
+open Fable.Core
 
+[<StringEnum>]
+type Page =
+    | SyntaxPage
+    | ButtonPage
+    | IconPage
+    | TypographyPage 
+    | DividerPage 
+    | GridPage 
+    | LayoutPage
+    | MenuPage
+    | StepsPage 
+    | FormPage 
+    | SelectPage 
+    | ListPage 
+    | CollapsePage 
+    | SegmentedPage 
+    | TablePage 
+    | TimelinePage 
+    | NotificationPage 
+    | ProgressPage 
+    | ChartsPage 
+    | DnDKitPage 
+    | ReactBeautifulDnDPage
+    | FelaPage
+    | RouterPage
 type Model =
     { Page: Page
       IsLoggingIn: bool }

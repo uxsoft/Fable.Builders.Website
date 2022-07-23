@@ -5,15 +5,12 @@ open Fable.AntDesign.Examples.Pages
 open Fable.AntDesign.Examples.Model
 open Fable.Builders.AntDesign
 open Fable.Builders.React
+open Fable.Builders.ReactRouterDom
 open Fable.Builders.Website.Pages
 open Feliz
 open Elmish
 open Elmish.React
 open Elmish.HMR
-
-let onPageSelected dispatch (e: ClickParam) = 
-    let success, page = Enum.TryParse<Page>(e.key)
-    if success then dispatch (Navigate page)
 
 let notFound =
     Result {
@@ -25,11 +22,14 @@ let notFound =
 let PageMenuItem (page: Page) (name: string) =
     MenuItem {
         key (string page)
-        label (str name)
+        label (Link {
+            href (string page)
+            str name
+        })
     }
 
 
-let view (model: Model) dispatch =
+let App (model: Model) dispatch =
     Layout {
         Header {
             style [
@@ -53,17 +53,17 @@ let view (model: Model) dispatch =
                 }
             }
              
-            Menu {
+            Space {
                 style [ style.float'.right ]
-                mode MenuMode.Horizontal
                 
-                MenuItem {
-//                    onClick (fun _ -> Browser.Dom.window.location.assign "https://github.com/uxsoft/Fable.Builders.Website" )
-                    style [ style.textAlign.center ]
+                Html.div {
+                    onClick (fun _ -> Browser.Dom.window.location.assign "https://github.com/uxsoft/Fable.Builders.Website" )
+                    style [ style.textAlign.center; style.cursor.pointer ]
                     BasicIcon Icons.GithubFilled {
                         style
-                            [ style.fontSize 32
-                              style.marginRight 0 ]
+                            [ style.fontSize 24
+                              style.marginRight 0
+                              style.paddingTop 4 ]
                     }
                 }
             }
@@ -76,7 +76,6 @@ let view (model: Model) dispatch =
                 
                 Menu {
                     selectedKeys [| string model.Page |]
-                    onClick (onPageSelected dispatch)
                     MenuItemGroup {
                         label (str "General")
                         
@@ -130,36 +129,60 @@ let view (model: Model) dispatch =
                     
                         PageMenuItem Page.DnDKitPage "dnd-kit"
                         PageMenuItem Page.ReactBeautifulDnDPage "react-beautiful-dnd"
-                        PageMenuItem Page.FelaPage "fela"
+
+                    }
+                    MenuItemGroup {
+                        label (str "Others")
+                        PageMenuItem Page.FelaPage "CSS-in-JS"
+                        PageMenuItem Page.RouterPage "Routing"
                     }
                 } 
             }
             Content {
                 style [ style.padding(8) ]
-                match model.Page with
-                | Page.SyntaxPage -> SyntaxPage.view model
-                | Page.ButtonPage -> ButtonPage.view model
-                | Page.IconPage -> IconPage.view model
-                | Page.TypographyPage -> TypographyPage.view model
-                | Page.DividerPage -> DividerPage.view model
-                | Page.MenuPage -> MenuPage.view model
-                | Page.GridPage -> GridPage.view model
-                | Page.LayoutPage -> LayoutPage.view model
-                | Page.StepsPage -> StepsPage.view model
-                | Page.FormPage -> FormPage.view model dispatch
-                | Page.SelectPage -> SelectPage.view model
-                | Page.ListPage -> ListPage.view model
-                | Page.CollapsePage -> CollapsePage.view model
-                | Page.SegmentedPage -> SegmentedPage.view model
-                | Page.TablePage -> TablePage.view model
-                | Page.TimelinePage -> TimelinePage.view model
-                | Page.NotificationPage -> NotificationPage.view model
-                | Page.ProgressPage -> ProgressPage.view model
-                | Page.ChartsPage -> ChartsPage.view model
-                | Page.DnDKitPage -> DnDKitPage.view model
-                | Page.ReactBeautifulDnDPage -> ReactBeautifulDnDPage.View ()
-                | Page.FelaPage -> FelaPage.view model
-                | _ -> notFound
+                Outlet { () }
+            }
+        }
+    }
+
+let view (model: Model) dispatch =
+    
+    BrowserRouter {
+        Routes {
+            Route {
+                path "/"
+                element (App model dispatch)
+                
+                Route { path (string Page.SyntaxPage); element (SyntaxPage.view model) }
+                Route { path (string Page.ButtonPage); element (ButtonPage.view model) }
+                Route { path (string Page.IconPage); element (IconPage.view model) }
+                Route { path (string Page.TypographyPage); element (TypographyPage.view model) }
+                Route { path (string Page.DividerPage); element (DividerPage.view model) }
+                Route { path (string Page.MenuPage); element (MenuPage.view model) }
+                Route { path (string Page.GridPage); element (GridPage.view model) }
+                Route { path (string Page.LayoutPage); element (LayoutPage.view model) }
+                Route { path (string Page.StepsPage); element (StepsPage.view model) }
+                Route { path (string Page.FormPage); element (FormPage.view model dispatch) }
+                Route { path (string Page.SelectPage); element (SelectPage.view model) }
+                Route { path (string Page.ListPage); element (ListPage.view model) }
+                Route { path (string Page.CollapsePage); element (CollapsePage.view model) }
+                Route { path (string Page.SegmentedPage); element (SegmentedPage.view model) }
+                Route { path (string Page.TablePage); element (TablePage.view model) }
+                Route { path (string Page.TimelinePage); element (TimelinePage.view model) }
+                Route { path (string Page.NotificationPage); element (NotificationPage.view model) }
+                Route { path (string Page.ProgressPage); element (ProgressPage.view model) }
+                Route { path (string Page.ChartsPage); element (ChartsPage.view model) }
+                Route { path (string Page.DnDKitPage); element (DnDKitPage.view model) }
+                Route { path (string Page.ReactBeautifulDnDPage); element (ReactBeautifulDnDPage.View ()) }
+                Route { path (string Page.FelaPage); element (FelaPage.view model) }
+                Route {
+                    path (string Page.RouterPage)
+                    element (RouterPage.view model)
+                    Route {
+                        path ":paramName"
+                    }
+                }
+                Route { path "*"; element notFound }
             }
         }
     }
