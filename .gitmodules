@@ -16,3 +16,6 @@
 [submodule "Fable.Builders.React"]
 	path = Fable.Builders.React
 	url = https://github.com/uxsoft/Fable.Builders.React
+[submodule "Fable.Builders.ReactRouterDom"]
+	path = Fable.Builders.ReactRouterDom
+	url = https://github.com/uxsoft/Fable.Builders.ReactRouterDom
