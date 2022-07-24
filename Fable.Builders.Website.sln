@@ -12,6 +12,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.Fela", "Fabl
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.Emotion", "Fable.Builders.Emotion\Fable.Builders.Emotion.fsproj", "{37FF6436-5DE1-41AE-968F-4420B81554EE}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fable.Builders.ReactRouterDom", "Fable.Builders.ReactRouterDom\Fable.Builders.ReactRouterDom.fsproj", "{76DEE0E5-2C70-4EE8-8E84-A872DE62798B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{37FF6436-5DE1-41AE-968F-4420B81554EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37FF6436-5DE1-41AE-968F-4420B81554EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37FF6436-5DE1-41AE-968F-4420B81554EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DEE0E5-2C70-4EE8-8E84-A872DE62798B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DEE0E5-2C70-4EE8-8E84-A872DE62798B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DEE0E5-2C70-4EE8-8E84-A872DE62798B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DEE0E5-2C70-4EE8-8E84-A872DE62798B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
