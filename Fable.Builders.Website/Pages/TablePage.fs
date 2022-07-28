@@ -16,8 +16,8 @@ type item =
 let view model =
     Example {
         name "Basic Layout"
-        sourceUrl "Pages/LayoutPage.fs"
-        sourceRange (15, 42)
+        sourceUrl "Pages/TablePage.fs"
+        sourceRange (22, 83)
 
         let data = [|
           { key = "1"
